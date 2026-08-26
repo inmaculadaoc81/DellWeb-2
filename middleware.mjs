@@ -1,9 +1,10 @@
 // middleware.mjs
 //
-// DellTech pasó de ser un sitio multipágina (con /modelos/...,
-// eliminados en commits anteriores) a una sola página (one-page).
-// Cualquier URL antigua que ya no forme parte del sitemap actual (que
-// solo tiene "/") debe redirigir a la home en vez de dar un 404.
+// InformáticosExpress (rebrand de DellTech Alienware) pasó de ser un
+// sitio multipágina (con /modelos/..., eliminados en commits
+// anteriores) a una sola página (one-page). Cualquier URL antigua que
+// ya no forme parte del sitemap actual (que solo tiene "/") debe
+// redirigir a la home en vez de dar un 404.
 //
 // El matcher de abajo excluye /api/* y cualquier ruta con extensión
 // (archivos estáticos: .css, .js, .png, .webp, etc.), así que esta

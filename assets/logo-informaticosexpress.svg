@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" role="img" aria-label="InformáticosExpress">
+  <defs>
+    <linearGradient id="ieBadge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b7cf5"/>
+      <stop offset="1" stop-color="#0053b8"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="14" width="112" height="112" rx="28" fill="url(#ieBadge)"/>
+  <path d="M40 47h40a6 6 0 0 1 6 6v34a6 6 0 0 1-6 6H40a6 6 0 0 1-6-6V53a6 6 0 0 1 6-6Z" fill="#fff" opacity=".14"/>
+  <path d="M42 52h36a5 5 0 0 1 5 5v28a5 5 0 0 1-5 5H42a5 5 0 0 1-5-5V57a5 5 0 0 1 5-5Z" fill="#fff"/>
+  <rect x="46" y="60" width="28" height="4" rx="2" fill="#0b7cf5"/>
+  <rect x="46" y="69" width="20" height="4" rx="2" fill="#9fc7fb"/>
+  <path d="M54 82.5 60 88l12-13" stroke="#0b7cf5" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="50" y="95" width="20" height="5" rx="2.5" fill="#fff"/>
+  <text x="140" y="70" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="900" letter-spacing="-1" fill="#071321">Inform&#225;ticos</text>
+  <text x="140" y="108" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="900" letter-spacing="-1" fill="#0b7cf5">Express</text>
+</svg>
