@@ -44,6 +44,37 @@ CAMBIOS DE MARCA APLICADOS:
   /modelos/, heredado de la conversión a one-page de DellTech); solo
   se ha actualizado el comentario de cabecera con el nuevo nombre.
 
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente):
+- H1 repetía la plantilla "no funciona" ("Tu ordenador no funciona.
+  Aquí lo diagnosticamos sin compromiso."). Reescrito, sin forzar
+  ninguna marca (taller multimarca): "Repara tu ordenador con
+  diagnóstico gratis en Madrid." (8 palabras).
+- BUG REAL DEL REBRANDING — dos textos decorativos gigantes seguían
+  mencionando "Dell"/"Alienware", marcas que ya no corresponden a este
+  taller multimarca: ".hero:after" ("DELL · ALIENWARE · DATA ·
+  MADRID") → "ORDENADORES · PORTÁTILES · DATOS · MADRID"; y
+  ".problems:after" ("ALIENWARE", 160px) → "ORDENADOR" (coincide con
+  el kicker de esa sección, "Qué le pasa a tu ordenador"). Además,
+  ".problems:after" y ".data-art:before" ("DATA", 120px) no tenían
+  ninguna reducción de tamaño en tablet/móvil; añadida (100px/70px en
+  tablet, 58px/42px en móvil).
+- BUG REAL — el botón CTA de teléfono no tenía icono, a diferencia del
+  de WhatsApp. Añadido (verificado con cuidado el cierre de las
+  etiquetas </a>: 20 aperturas / 20 cierres).
+- BUG REAL — el formulario no tenía ninguna casilla de consentimiento
+  de política de privacidad. Añadida desde cero, con el texto y
+  enlace estándar de la familia, resaltado en azul.
+- Añadida franja de aviso de servicio técnico independiente debajo del
+  menú (no existía). Verificado antes que .header no usa
+  display:flex directamente.
+- Añadido "Sábados, domingos y días festivos estamos cerrados" debajo
+  del horario.
+- Verificado sin bugs: no existe ninguna etiqueta rotada tipo
+  .hero-chip/.hero-tag/.hero-pill/.hero-label (los elementos
+  decorativos .hero-ring y .hero-cut son formas sin texto, no
+  píldoras); schema.org ya usaba correctamente el teléfono de la caja
+  de información; formulario correctamente conectado a /api/contacto.
+
 ⚠️ PENDIENTE DE CONFIRMAR (no resuelto, no tocado por falta de datos
 nuevos del cliente):
 - Teléfono: se ha mantenido +34 910 05 31 43 (el mismo de DellTech),
