@@ -100,3 +100,22 @@ CONTACT_EMAIL=soporte@kelatos.com
 
 El correo no aparece visible en la web; solo se usa en backend.
 api/contacto.js ya usaba SMTP + nodemailer; no requería cambios.
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente — repo 17/48):
+- BUG REAL — enlace de Cal.com desactualizado. Actualizado a
+  https://cal.com/kelatos/30min?embed=true&theme=light&attendeePhoneNumber=%2B34&overlayCalendar=true.
+- Verificado: el correo soporte@kelatos.com no aparece visible.
+- BUG REAL — el mensaje prellenado de WhatsApp decía "¡Hola Kelatos!".
+  Corregido a "¡Hola InformaticosExpress!".
+- Verificado: el menú móvil ya se cerraba correctamente al pulsar un
+  enlace.
+- Verificado: sin iconos ni imágenes con proporciones fijas
+  incorrectas.
+- Verificado: el H1 en móvil ya está en 48px.
+- BUG REAL — botones del hero (.cta) con border-radius de 15px y sin
+  estado hover. Aumentado a border-radius:999px; añadido
+  filter:brightness(.88) en whatsapp/pickup (colores sólidos) y
+  relleno sólido con var(--blue2) + texto blanco en el botón de
+  teléfono (estilo contorno) al pasar el ratón.
+- Verificado: este repo no usa el patrón de franja de insignias bajo
+  el H1 (familia Dyson); no aplica la reubicación.
