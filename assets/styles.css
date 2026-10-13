@@ -73,3 +73,4 @@ footer{background:#061321;color:#fff;padding:34px 0}.footer{display:flex;justify
   .problems:after{font-size:58px}.data-art:before{font-size:42px}
 }
 .quote:hover{filter:brightness(.88)}
+.quote svg{width:20px!important;height:20px!important;max-width:20px!important;max-height:20px!important;flex:0 0 20px!important}
