@@ -9,7 +9,10 @@
 // El matcher de abajo excluye /api/* y cualquier ruta con extensión
 // (archivos estáticos: .css, .js, .png, .webp, etc.), así que esta
 // función solo se ejecuta para rutas "de página". Si esa ruta no es la
-// home, se redirige (301) a "/".
+// home ni el blog (/blog y /blog/<slug>), se redirige (301) a "/".
+//
+// En producción este middleware no llega a ejecutarse: las redirecciones
+// que sí funcionan están en vercel.json.
 
 import { next } from '@vercel/functions'
 
@@ -24,7 +27,7 @@ export default function middleware(request) {
   const url = new URL(request.url)
   const normalized = normalize(url.pathname)
 
-  if (normalized === '' || normalized === '/') {
+  if (normalized === '' || normalized === '/' || normalized === '/blog' || normalized.startsWith('/blog/')) {
     return next()
   }
 

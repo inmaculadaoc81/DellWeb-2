@@ -74,3 +74,6 @@ footer{background:#061321;color:#fff;padding:34px 0}.footer{display:flex;justify
 }
 .quote:hover{filter:brightness(.88)}
 .quote svg{width:20px!important;height:20px!important;max-width:20px!important;max-height:20px!important;flex:0 0 20px!important}
+
+/* El menú no cabe en una línea por debajo de 1040px: pasa a hamburguesa en vez de partir los textos. */
+.links a{white-space:nowrap}@media(max-width:1040px){.links{display:none}.menu-btn{display:block}}
